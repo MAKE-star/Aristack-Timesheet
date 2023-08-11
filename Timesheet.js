@@ -1,4 +1,6 @@
 function submitForm() {
+    event.preventDefault();
+
     const form = document.getElementById("timesheetForm");
 
     const formData = new FormData(form);
@@ -9,10 +11,9 @@ function submitForm() {
     })
     .then(response => response.text())
     .then(data => {
-        // Handle response from the server
         if (data === "Data saved successfully.") {
             alert("Data saved successfully.");
-            form.reset(); // Reset the form after successful submission
+            form.reset(); 
         } else {
             alert("Error saving data.");
         }
