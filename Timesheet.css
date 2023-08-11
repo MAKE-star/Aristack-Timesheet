@@ -1,0 +1,62 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .timesheet {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(127, 39, 136, 0.1);
+    padding: 20px;
+    width: 500px;
+  }
+
+  .timesheet h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .timesheet form {
+    display: grid;
+    grid-gap: 10px;
+  }
+
+  .timesheet label {
+    font-weight: bold;
+    color:  #6a366b;
+  }
+  
+  .timesheet input[type="text"],
+  .timesheet input[type="date"],
+  .timesheet input[type="number"],
+  .timesheet textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .timesheet input:hover, 
+  .timesheet textarea:hover {
+    background-color: #ccc;
+  }
+
+  .timesheet button {
+    background-color: #5a074c;;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .timesheet button:hover {
+    background-color: #4a1e42;
+  }
